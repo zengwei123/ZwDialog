@@ -1,5 +1,6 @@
 package com.example.zengwei.zwdialog;
 
+import android.Manifest;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,13 +9,27 @@ import android.widget.Toast;
 
 import com.example.zwdialogs.DetermineListener;
 import com.example.zwdialogs.SelectListener;
+import com.example.zwdialogs.ZwPermissions;
 
 public class MainActivity extends AppCompatActivity {
     private Button abc1,abc2,abc3,abc4,abc5,abc6,abc7;
+    private ZwPermissions zwPermissions;
+    private  String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.READ_PHONE_STATE};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout);
+        zwPermissions=new ZwPermissions(this, permissions,getPackageName(), new DetermineListener() {
+            @Override
+            public void ok() {
+                Toast.makeText(MainActivity.this, "权限获取成功", Toast.LENGTH_SHORT).show();
+            }
+            @Override
+            public void no() {
+                finish();
+            }
+        });
+        zwPermissions.initPermission();
         abc1=findViewById(R.id.abc1);
         abc1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,9 +100,14 @@ public class MainActivity extends AppCompatActivity {
 //                        Toast.makeText(MainActivity.this, "取消", Toast.LENGTH_SHORT).show();
 //                    }
 //                });
-                new com.example.zwdialogs.ZwDialogUtil().littie(MainActivity.this,2,"#ccff0000");
+                new com.example.zwdialogs.ZwDialogUtil().littie(MainActivity.this,0,"#ccff0000");
             }
         });
     }
-
+    /**获取权限**/
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        zwPermissions.ZwRequestPermissionsResult(requestCode,permissions,grantResults);
+    }
 }
