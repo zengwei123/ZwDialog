@@ -88,7 +88,8 @@ public class MainActivity extends AppCompatActivity {
 ### 5.图标文字
 ![图片1](https://github.com/zengwei123/ZwDialog/blob/master/image/3.png)</br>
 
-> #### 经常使用这个，所以也集成了一下，就是是配了个文字图库其他，下面是图标的代码
+> #### 经常使用这个，所以也集成了一下，就是是配了个文字图库其他，图标代码去下面这里链接看，下下来然后打开Html
+https://github.com/zengwei123/ZwDialog/tree/master/image/font
 
 ### 6.获取指定大小的图片，和获取屏幕宽高中最小的 看图使用
 ![图片1](https://github.com/zengwei123/ZwDialog/blob/master/image/4.png)</br>
