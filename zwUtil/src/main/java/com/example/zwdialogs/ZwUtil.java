@@ -51,30 +51,26 @@ public class ZwUtil {
      * @param animStr  动画类型
      * @param floats   属性
      */
-    public static void AnimatorFloat(View view,int time,int StartDelay,int i,boolean b,String animStr,float... floats){
+    public static void AnimatorFloat(View view,int time,int StartDelay,int i,int z,String animStr,float... floats){
         ObjectAnimator objectAnimator= ObjectAnimator.ofFloat(view,animStr, floats);       //透明度
         objectAnimator.setEvaluator(new FloatEvaluator());    //设置一个估值器，常用的有ArgbEvaluator\IntEvaluator\FloatEvaluator
         objectAnimator.setRepeatCount(i);
-        if(b){
-            objectAnimator.setRepeatMode(ObjectAnimator.REVERSE);    //重复模式 REVERSE逆向重复  REPEAT 连续重复
-        }else {
-            objectAnimator.setRepeatMode(ObjectAnimator.RESTART);    //重复模式 REVERSE逆向重复  REPEAT 连续重复
+        if(z==-1||z==1||z==2){
+            objectAnimator.setRepeatMode(z);    //重复模式 REVERSE逆向重复  REPEAT 连续重复
         }
         objectAnimator.setDuration(time);
         objectAnimator.setStartDelay(StartDelay);
         objectAnimator.start();
     }
-    public static void AnimatorInt(View view,int time,int StartDelay,int i,boolean b,String animStr,int... ints){
+    public static void AnimatorInt(View view,int time,int StartDelay,int i,int z,String animStr,int... ints){
         ObjectAnimator objectAnimator= ObjectAnimator.ofInt(view,animStr, ints);       //透明度
         objectAnimator.setEvaluator(new IntEvaluator());    //设置一个估值器，常用的有ArgbEvaluator\IntEvaluator\FloatEvaluator
-        objectAnimator.setRepeatCount(i);
-        if(b){
-            objectAnimator.setRepeatMode(ObjectAnimator.REVERSE);    //重复模式 REVERSE逆向重复  REPEAT 连续重复
-        }else {
-            objectAnimator.setRepeatMode(ObjectAnimator.RESTART);    //重复模式 REVERSE逆向重复  REPEAT 连续重复
+        objectAnimator.setRepeatCount(i);   //重复次数
+        if(z==-1||z==1||z==2){
+            objectAnimator.setRepeatMode(z);    //重复模式 REVERSE逆向重复  REPEAT 连续重复
         }
         objectAnimator.setDuration(time);
-        objectAnimator.setDuration(time);
+        objectAnimator.setDuration(StartDelay);
         objectAnimator.start();
     }
 }
