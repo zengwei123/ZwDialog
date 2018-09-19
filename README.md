@@ -111,7 +111,17 @@ ZwUtil.AnimatorFloat(button,1000,0,0,-1,"scaleY",1f,0.5f);
 https://zengwei123.github.io/2016/11/25/Android%E5%8A%A8%E7%94%BB/
 https://zengwei123.github.io/2016/11/27/Android%E5%8A%A8%E7%94%BB2/
 
-
+依赖导入
+module app
+`implementation 'com.github.zengwei123:ZwDialog:1.6'`
+projiec
+allprojects {
+    repositories {
+       ...
+        maven { url 'https://jitpack.io' }
+        ...
+    }
+}
 
 
 
