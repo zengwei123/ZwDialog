@@ -46,7 +46,7 @@ new ZWindowSizeUtils().getScreenHeight(1f);  //屏幕的高度
 > #### 这个应该都看的懂，参数就是百分比
 
 ### 3.权限获取  
-![图片1](https://github.com/zengwei123/ZwDialog/blob/master/image/3.gif)</br>
+![图片1](https://github.com/zengwei123/ZwDialog/blob/master/image/4.gif)</br>
 ```java
 public class MainActivity extends AppCompatActivity {
     private ZwPermissions zwPermissions;
