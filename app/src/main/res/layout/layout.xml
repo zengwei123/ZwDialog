@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/abc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="普通对话框" />
+
+    <Button
+        android:id="@+id/abc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="列表对话框" />
+
+    <Button
+        android:id="@+id/abc3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="单选对话框" />
+    <Button
+        android:id="@+id/abc4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="多选对话框" />
+    <Button
+        android:id="@+id/abc5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="半自定义对话框" />
+    <Button
+        android:id="@+id/abc6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="全自定义对话框" />
+    <Button
+        android:id="@+id/abc7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载对话框" />
+</LinearLayout>

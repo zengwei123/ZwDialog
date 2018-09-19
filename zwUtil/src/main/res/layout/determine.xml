@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:orientation="vertical">
+    <LinearLayout
+        android:paddingTop="15dp"
+        android:id="@+id/liners"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="标题"
+        android:layout_marginBottom="15dp"
+        android:textColor="#2b2b2b" />
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="内容"
+        android:textColor="#c1c1c1" />
+        <View
+            android:layout_marginTop="15dp"
+            android:background="#cccccc"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/liners"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/cancel"
+            android:text="取消"
+            android:textColor="#2b2b2b"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="#cccccc"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></View>
+        <TextView
+            android:id="@+id/confirm"
+            android:text="确认"
+            android:textColor="#2b2b2b"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
