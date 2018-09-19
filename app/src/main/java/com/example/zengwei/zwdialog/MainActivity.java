@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                // new ZwDialogUtil().g(MainActivity.this);
-//                new com.example.zwdialogs.ZwDialogUtil().determine(MainActivity.this, "警告", "曾伟是个帅哥", new DetermineListener() {
+//                new com.example.zwdialogs.ZwDialogUtil().determine(MainActivity.this, "提醒", "真香警告！", new DetermineListener() {
 //                    @Override
 //                    public void ok() {
 //                        Toast.makeText(MainActivity.this, "确定", Toast.LENGTH_SHORT).show();
