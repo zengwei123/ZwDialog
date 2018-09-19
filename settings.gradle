@@ -1,1 +1,1 @@
-include ':app', ':zwUtil',':lottie'
+include ':app', ':zwUtil'

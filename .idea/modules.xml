@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ZwDialog.iml" filepath="$PROJECT_DIR$/ZwDialog.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lottie/lottie.iml" filepath="$PROJECT_DIR$/lottie/lottie.iml" />
       <module fileurl="file://$PROJECT_DIR$/zwUtil/zwdialogs.iml" filepath="$PROJECT_DIR$/zwUtil/zwdialogs.iml" />
     </modules>
   </component>
